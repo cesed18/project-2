@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/product_item_cardView"
+    android:layout_width="220dp"
+    android:layout_height="320dp"
+    android:layout_margin="10dp"
+    app:cardElevation="4dp"
+    app:contentPadding="10dp"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imageview_product_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:layout_marginBottom="10dp"
+
+        />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textview_product_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="Title of Product"
+            android:textColor="@android:color/black"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            />
+
+            <ImageView
+                android:id="@+id/imageview_more_actions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_gravity="right|end"
+
+                android:src="@drawable/ic_more_vert_black_24dp"/>
+
+            </LinearLayout>
+        <TextView
+            android:id="@+id/textview_product_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="bottom|right"
+            android:maxLines="1"
+            tools:text="$9,999,999.99"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/colorAccent"/>
+        </FrameLayout>
+
+
+        </LinearLayout>
+
+</android.support.v7.widget.CardView>
